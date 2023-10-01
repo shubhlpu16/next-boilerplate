@@ -4,9 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "pre-commit": "lint-staged",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{json,md,css,scss,yml}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint"
+    }
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.1.5",
@@ -14,6 +24,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^1.9.6",
+    "eslint": "^8.50.0",
     "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
@@ -24,9 +35,11 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "eslint": "latest",
     "eslint-config-next": "latest",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
     "typescript": "latest"
   }
