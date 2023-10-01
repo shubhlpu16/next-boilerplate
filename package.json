@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "precommit": "lint-staged",
+    "pre-commit": "lint-staged",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,7 +15,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint"
     }
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "eslint": "^8.50.0",
     "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
