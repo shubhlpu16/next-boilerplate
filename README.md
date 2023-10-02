@@ -1,28 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Next.js Boilerplate with SWR, Redux Toolkit, Chakra UI, TypeScript, ESLint, Prettier, and Husky
+
+This is a boilerplate project for creating Next.js applications with the following features:
+
+- [SWR](https://swr.vercel.app/): Data fetching library for efficient and simplified API requests.
+- [Redux Toolkit](https://redux-toolkit.js.org/): State management library for Redux with simplified syntax.
+- [Chakra UI](https://chakra-ui.com/): A simple, modular, and accessible component library.
+- [TypeScript](https://www.typescriptlang.org/): Typed superset of JavaScript for enhanced development.
+- [ESLint](https://eslint.org/): JavaScript and TypeScript linter for maintaining code quality.
+- [Prettier](https://prettier.io/): Code formatter for consistent code style.
+- [Husky](https://typicode.github.io/husky): Git hooks for automated linting and formatting.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone this repository:
+
+```bash
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Available Scripts
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run start`: Starts the app in production mode.
+- `npm run lint`: Lints the code using ESLint.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Project Structure
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `pages/`: Contains the Next.js pages and routing.
+- `components/`: React components.
+- `redux/`: Redux Toolkit setup and slice files.
+- `styles/`: Global styles and Chakra UI theme.
+- `public/`: Static assets.
+- `package.json`: Project configuration and dependencies.
+- `tsconfig.json`: TypeScript configuration.
+- `.prettierrc`: Prettier configuration.
+- `.eslintrc.js`: ESLint configuration.
+- `.husky/`: Husky Git hooks configuration.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## For redux toolkit 
+
+Checkout to `next-redux` branch
+
+## For Swr
+
+Checkout to `next-swr` branch
+
+## Contributing
+
+Feel free to contribute to this project. Create a pull request or open an issue for any suggestions or improvements.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+```
+
+Remember to replace `yourusername` and `your-repo` with your actual GitHub username and repository name. This `README.md` provides an overview of the project, explains how to get started, lists available scripts, explains the project structure, and includes sections for contributing and licensing information.
+
+```
 
 ## Learn More
 
