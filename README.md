@@ -43,7 +43,8 @@ npm run dev
 
 - `pages/`: Contains the Next.js pages and routing.
 - `components/`: React components.
-- `redux/`: Redux Toolkit setup and slice files.
+- `store/`: Redux Toolkit setup and slice files.
+- `data/`: Swr setup and hooks for data fetching.
 - `styles/`: Global styles and Chakra UI theme.
 - `public/`: Static assets.
 - `package.json`: Project configuration and dependencies.
