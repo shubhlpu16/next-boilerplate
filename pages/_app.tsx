@@ -4,14 +4,17 @@ import { Provider } from 'react-redux'
 
 import { theme } from '@/styles/theme'
 import '@/styles/globals.css'
-import { store } from '@/store'
+import { persistedStore, store } from '@/store'
+import { PersistGate } from 'redux-persist/integration/react'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
-      </ChakraProvider>
+      <PersistGate loading={null} persistor={persistedStore}>
+        <ChakraProvider theme={theme}>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </PersistGate>
     </Provider>
   )
 }
